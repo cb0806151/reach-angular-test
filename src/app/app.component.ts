@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as reach from '@reach-sh/stdlib/ALGO';
+import * as reach from '@reach-sh/stdlib/ALGO'
 
 @Component({
   selector: 'app-root',
