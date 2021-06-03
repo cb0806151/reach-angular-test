@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# reach
+src/reach
+src/docker-compose.yml.devnet
+
 # compiled output
 /dist
 /tmp

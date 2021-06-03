@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import * as reach from '@reach-sh/stdlib/ALGO'
+import {loadStdlib} from '@reach-sh/stdlib';
+const reach = loadStdlib('ALGO');
 
 @Component({
   selector: 'app-root',
