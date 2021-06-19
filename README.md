@@ -1,27 +1,36 @@
-# ConnectWallet
+# Angular + Reach: Connecting and Funding an Algorand Test Wallet 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+<details><summary><strong>Description</strong></summary>
+<p>  
 
-## Development server
+To follow along and create the above repository, please see the [companion tutorial video.](https://youtu.be/2zq_lV4hmVg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This application is a showcase of connecting a Angular application to an Algorand testnet using Reach and the Algosigner extension. It features connecting to a test wallet and then funding that test wallet with fake funds for use in testing contracts. I kept it rather simple to serve as a bite-sized introduction to dapp development by way of a feature common across many dapps during development.
+</p>
+</details>
+<details><summary><strong>Setup Instructions</strong></summary>
+<p>
 
-## Code scaffolding
+- clone the repository
+- open a terminal to the `reach-angular-test` folder 
+- from there run the command `npm install`
+- once that has completed run `cd src`
+- (if on Windows) run the `wsl` command to switch over to linux
+- run the `curl https://raw.githubusercontent.com/reach-sh/reach-lang/master/reach -o reach ; chmod +x reach` command to download reach into the src folder
+- run the `./reach version` command to ensure it installed
+- run the `REACH_CONNECTOR_MODE=ALGO ./reach devnet` command to start the testnet
+- start up a new terminal and navigate to the `reach-angular-test` folder 
+- now run the `npm start` command to run the applications frontend
+- navigate to the localhost link given by the above command to view the application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</p>
+</details>
 
-## Build
+<details><summary><strong>Further Reading & Challenges</strong></summary>
+<p>  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+If you are just getting started with dapp development, I highly recommend the [Reach tutorial](https://docs.reach.sh/tut.html). It will show you the foundation of contract creation using Reach and go from contract interaction through the cli back here to the frontend by the end of the tutorial.  
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If after that you’d like a bit of a challenge, [Reach has a ton of dapp examples](https://github.com/reach-sh/reach-lang/tree/master/examples) that haven’t been turned into web applications yet; taking the time to transcribe them instead of just copy and pasting them will increase your familiarity with the Reach contract language while connecting those contracts to the frontend will increase your familiarity with the workflow of dapp development.
+</p>
+</details>
