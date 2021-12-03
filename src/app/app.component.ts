@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {loadStdlib} from '@reach-sh/stdlib';
+import { loadStdlib } from '@reach-sh/stdlib';
 const reach = loadStdlib('ALGO');
 
 @Component({
@@ -24,7 +24,7 @@ export class AppComponent {
     await this.getBalance();
   }
   async getAccount() {
-    this.account = await reach.getDefaultAccount();
+    this.account = await reach.createAccount();
     console.log(this.account);
   }
   async getBalance() {
